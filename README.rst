@@ -14,10 +14,15 @@ To use, clone and compile from the `GitHub repository
 .. code:: bash
 
    git clone https://github.com/AlainKadar/ParQC
-   g++ -std=c++11 -O0 -fopenmp -o lift lift.cpp 
+   g++ -std=c++11 -o lift lift.cpp -fopenmp
 
-You can check the executable works by testing whether running the ``Verifier.ipynb`` notebook reconstructs the gsd file from the hyperlattice matrix computed by ``lift``. This notebook requires the `freud <https://anaconda.org/conda-forge/freud>`__ and `gsd <https://anaconda.org/conda-forge/gsd>`__ python libraries.
+To use the GPU implementation, you must have the CUDA compiler, ``nvcc``:
 
+.. code:: bash
+
+   nvcc -std=c++11 -o lift lift.cu  -Xcompiler -fopenmp
+
+You can check the executables work by testing whether running the ``Verifier.ipynb`` notebook reconstructs the gsd file from the hyperlattice matrix computed by ``lift``. This notebook requires the `freud <https://anaconda.org/conda-forge/freud>`__ and `gsd <https://anaconda.org/conda-forge/gsd>`__ python libraries.
 The code can be run on new gsd files by first writing the neighbor and position lists with the notebook and then running the code from either the terminal or a bash script:
 
 .. code:: bash
