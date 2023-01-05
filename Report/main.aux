@@ -1,0 +1,31 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Lifting procedure}{1}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic for the lifting procedure. The upper panel shows which particle is chosen as the origin, and the basis vectors. The matrix, $\mathbf  {Q}$ is simply where the basis vectors are stored. The lower panel shows that 2 unvisited neighbors of the origin were identified as being in alignment with one of the basis vectors. The hyperlattice matrix is updated accordingly. Figure adapted from a schematic by Kelly Wang of Glotzer group.}}{2}{}\protected@file@percent }
+\newlabel{fig:schematic}{{1}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Lifting algorithm}{2}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Lifting algorithm}}{3}{}\protected@file@percent }
+\newlabel{alg:Lifting}{{1}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Parallelization methods}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}GPU kernelized matrix multiplication}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Parallelized queues}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Nested parallel list searching}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Final results and future work}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}GPU kernelized matrix multiplication}{4}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Parallel lifting algorithm}}{5}{}\protected@file@percent }
+\newlabel{alg:ParallelLifting}{{2}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Schematic of the nested parallelization used in this work. Only one part of the threading is shown as fully expanded. In this schematic, each parent thread spawns four child threads, but this is arbitrary. The effect of different thread numbers for different levels is investigated here.}}{5}{}\protected@file@percent }
+\newlabel{fig:nested}{{2}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Verification that the algorithm produces the correct $\mathbf  {H}$. The operation $\mathbf  {Q^TH^T}$ produces the coordinates for an perfect tiling}}{6}{}\protected@file@percent }
+\newlabel{fig:recontruction}{{3}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Nested array searching}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Neighbor list searching}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Visitor list searching}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Time taken to run the parallel lifting algorithm, as a function of number of threads used in searching the neighbor list, for the small and large system.}}{7}{}\protected@file@percent }
+\newlabel{fig:NeighbourSearching}{{4}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Time taken to run the parallel lifting algorithm, as a function of number of threads used in searching the visited list, for the small and large system.}}{7}{}\protected@file@percent }
+\newlabel{fig:VisitorSearching}{{5}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion and future work}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Appendix A: Complete list of timings}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Complete list of timings used to assess variations of the parallel lifting algorithm}}{9}{}\protected@file@percent }
+\newlabel{fig:recontruction}{{6}{9}}
+\gdef \@abspage@last{9}
